@@ -27,6 +27,7 @@ Install with the Stylus extension for Chrome or Firefox.
   --search-hover: #d5dadf;
   --bullet-outer: #6c6f75;
   --bullet-inner: #D8DEE9;
+  --column-title: #818D9B;
 }
 
 
@@ -64,14 +65,6 @@ Install with the Stylus extension for Chrome or Firefox.
   background-color: var(--foreground);
 }
 
-#buffer.tall {
-  height: calc(100vh - 50px);
-}
-
-/* .check-container {
-  padding-right: 4px;
-} */
-
 .roam-block-container button {
   background-color: var(--current-line);
   color: var(--foreground);
@@ -83,6 +76,14 @@ Install with the Stylus extension for Chrome or Firefox.
 
 #right-sidebar > div {
   background-color: var(--background2);
+}
+
+
+/* Buffer (the help window in the bottom right corner) */
+
+#buffer {
+  background-color: var(--current-line) !important;
+  color: var(--foreground) !important;
 }
 
 
@@ -208,11 +209,11 @@ a:hover {
 }
 
 .rm-pages-title-col span {
-  color: #818D9B;
+  color: var(--column-title);
 }
 
 .rm-pages-col span {
-  color: #818D9B;
+  color: var(--column-title);
 }
 
 .rm-pages-title-col span.sorted-header-text {
@@ -237,7 +238,6 @@ a:hover {
 
 
 /* All Pages checkmarks */
-
 
 .bp3-control.bp3-checkbox .bp3-control-indicator {
   background-color: var(--current-line);
@@ -361,7 +361,7 @@ a:hover {
 }
 
 
-/* Filter page */
+/* Filter tooltip */
 
 .bp3-tooltip .bp3-popover-content {
   background-color: var(--current-line);
@@ -485,8 +485,8 @@ code {
 }
 
 .cm-fat-cursor .CodeMirror-cursor {
-  background: var(--bullet-inner);
-  color: var(--bullet-outer);
+  background: var(--bullet-inner);  /* best guess */
+  color: var(--bullet-outer);       /* best guess */
 }
 
 .CodeMirror-ruler {
@@ -498,15 +498,15 @@ code {
 }
 
 .cm-s-default .cm-quote {
-  color: var(--green);
+  color: var(--green);  /* best guess */
 }
 
 .cm-negative {
-  color: var(--red);
+  color: var(--red);  /* best guess */
 }
 
 .cm-positive {
-  color: var(--green);
+  color: var(--green);  /* best guess */
 }
 
 .cm-s-default .cm-keyword {
@@ -543,11 +543,11 @@ code {
 }
 
 .cm-s-default .cm-string-2 {
-  color: var(--yellow);
+  color: var(--yellow);  /* best guess */
 }
 
 .cm-s-default .cm-meta {
-  color: var(--bullet-outer);
+  color: var(--bullet-outer);  /* best guess */
 }
 
 .cm-s-default .cm-qualifier {
@@ -559,7 +559,7 @@ code {
 }
 
 .cm-s-default .cm-bracket {
-  color: var(--bullet-inner);
+  color: var(--bullet-inner);  /* best guess */
 }
 
 .cm-s-default .cm-tag {
@@ -571,7 +571,7 @@ code {
 }
 
 .cm-s-default .cm-hr {
-  color: var(--bullet-inner);
+  color: var(--bullet-inner);  /* best guess */
 }
 
 .cm-s-default .cm-link {
@@ -595,7 +595,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .CodeMirror-matchingtag {
- background: var(--orange);
+ background: var(--orange);  /* best guess */
 }
 
 .CodeMirror-activeline-background {
@@ -623,7 +623,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .cm-searching {
-  background-color: var(--dark-yellow);
+  background-color: var(--dark-yellow);  /* best guess */
 }
  
 
