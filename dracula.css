@@ -1,0 +1,637 @@
+/*
+Dracula Theme for Roam Research v0.7.2.
+Install with the Stylus extension for Chrome or Firefox.
+*/
+
+:root {
+  /* Dracula black & white colors */
+  --background:   #282a36;
+  --current-line: #44475a;
+  --foreground:   #f8f8f2;
+  --comment:      #6272a4;
+
+  /* Dracula color palette */
+  --blue:   #8be9fd;
+  --green:  #50fa7b; 
+  --orange: #ffb86c;
+  --pink:   #ff79c6;
+  --purple: #bd93f9;
+  --red:    #ff5555;
+  --yellow: #f1fa8c;
+
+  /* Other UI colors */
+  --dark-yellow:  #6c7605;
+  --background2:  #333545;
+  --foreground2:  #BDCAD4;
+  --search-input: #e4e9ed;
+  --search-hover: #d5dadf;
+  --bullet-outer: #6c6f75;
+  --bullet-inner: #D8DEE9;
+}
+
+
+/* Body, topbar, sidebar */
+
+.roam-topbar {
+  background-color: var(--background);
+}
+
+.roam-body-main {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.roam-body .roam-app h1 {
+  color: var(--foreground);
+}
+
+.roam-app {
+  background-color: var(--background);
+}
+
+.roam-body .roam-app .roam-sidebar-container {
+  background-color: var(--background2);
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover {
+  background: var(--current-line);
+  color: var(--foreground);
+  opacity: 1;
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button .bp3-button:hover {
+  background-color: var(--foreground);
+}
+
+#buffer.tall {
+  height: calc(100vh - 50px);
+}
+
+/* .check-container {
+  padding-right: 4px;
+} */
+
+.roam-block-container button {
+  background-color: var(--current-line);
+  color: var(--foreground);
+  border-color: var(--background2);
+}
+
+
+/* Right sidebar */
+
+#right-sidebar > div {
+  background-color: var(--background2);
+}
+
+
+/* Highlights */
+
+.roam-highlight {
+  background-color: var(--dark-yellow);
+}
+
+.block-highlight-yellow {
+  background-color: var(--dark-yellow);
+}
+
+
+/* Toast messages */
+
+.bp3-toast.bp3-intent-success {
+  background-color: var(--green);
+}
+
+.bp3-toast.bp3-intent-warning {
+  background-color: var(--orange);
+}
+
+
+/* Sync icon */
+
+.rm-saving-inner-icon.rm-synced {
+  background-color: var(--green);
+  opacity: 1;
+}
+
+.rm-saving-inner-icon.rm-saving-remote {
+  background-color: var(--orange);
+  opacity: 1;
+}
+
+
+/* External links */
+
+a {
+  color: var(--blue);
+}
+
+a:hover {
+  color: var(--blue);
+}
+
+
+/* Reference links */
+
+.rm-block-ref {
+  border-bottom: 0.5px solid var(--current-line);
+}
+
+.rm-block-ref:hover {
+  background-color: var(--background2);
+}
+
+.rm-page-ref {  
+  color: var(--comment);
+}
+
+.rm-page-ref-link-color {
+  color: var(--purple);
+}
+
+.rm-page-ref-brackets {
+  color: var(--comment);
+}
+
+
+/* Reference pages */
+
+.rm-ref-page-view-title span {
+  color: var(--pink);
+}
+
+.rm-reference-item {
+  background-color: var(--current-line);
+}
+
+.parent-path-wrapper {
+  color: var(--foreground2);
+}
+
+.bp3-icon-standard {
+  color: var(--foreground2);
+}
+
+
+/* Bullet points & indent lines */
+
+.controls .simple-bullet-outer .simple-bullet-inner {
+  background-color: var(--bullet-inner);
+}
+
+.roam-bullet-closed {
+  background-color: var(--bullet-outer); 
+}
+
+#right-sidebar .roam-bullet-closed {
+  background-color: var(--bullet-outer); 
+}
+
+.block-border-left {
+  border-left: 1px solid var(--comment);
+}
+
+
+/* All Pages table */
+
+.rm-pages-title-text {
+  color: var(--foreground);
+}
+
+.rm-all-pages .table .rm-pages-row.rm-pages-row-header {
+  background-color: var(--background2);
+}
+
+.rm-all-pages .table .rm-pages-row {
+  border-bottom: 1px solid var(--background2); 
+}
+
+.rm-pages-title-col span {
+  color: #818D9B;
+}
+
+.rm-pages-col span {
+  color: #818D9B;
+}
+
+.rm-pages-title-col span.sorted-header-text {
+  color: var(--foreground2);
+}
+
+.rm-pages-col span.sorted-header-text {
+  color: var(--foreground2);
+}
+
+.sorting-button-group .focused::before {
+  color: var(--foreground2);
+}
+
+.rm-pages-title-col a.rm-pages-title-text:hover {
+  color: var(--foreground2);
+}
+
+.rm-pages-title-col span.title-children-text {
+  color: var(--comment); 
+}
+
+
+/* All Pages checkmarks */
+
+
+.bp3-control.bp3-checkbox .bp3-control-indicator {
+  background-color: var(--current-line);
+  border-color: var(--background2);
+  background-image: none;
+} 
+
+.bp3-control.bp3-checkbox input:active ~ .bp3-control-indicator {
+  background-color: var(--bullet-outer);
+}
+
+.bp3-control.bp3-checkbox input:not(:disabled):active:checked ~ .bp3-control-indicator {
+  background-color: var(--bullet-outer);
+}
+
+.bp3-control.bp3-checkbox input:checked ~ .bp3-control-indicator {
+  background-color: var(--dark-yellow);
+} 
+
+/* Mentions in All Pages */
+
+.rm-clickable-pill.empty-pill {
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+.rm-clickable-pill {
+  color: var(--background);
+  background-color: var(--blue);
+  opacity: 0.7;
+}
+
+.rm-clickable-pill.level1-pill {
+  color: var(--background);
+  background-color: var(--blue);
+  opacity: 0.8;
+}
+
+.rm-clickable-pill.level2-pill {
+  color: var(--background);
+  background-color: var(--blue);
+  opacity: 0.9;
+}
+
+.rm-clickable-pill.level3-pill {
+  color: var(--background);
+  background-color: var(--blue);
+  opacity: 1;
+}
+
+
+/* Find or Create Page search box */
+
+.bp3-input {
+  background-color: var(--search-input);
+  color: var(--background);
+}
+
+.bp3-menu {
+  background-color: var(--search-input) !important;
+  color: var(--current-line) !important;
+}
+
+.bp3-menu div:hover {
+  background-color: var(--search-hover);
+}
+
+.rm-find-or-create-wrapper .rm-menu-item .rm-search-title .rm-new-page {
+  color: var(--pink); 
+}
+
+.rm-find-or-create-wrapper .rm-menu-item .rm-search-list-item {
+  color: var(--comment); 
+}
+
+.rm-find-or-create-wrapper .rm-menu-item ul {
+  color: var(--comment);
+}
+
+
+/* Hover window triggered by autocompletion */
+
+.bp3-elevation-3 {
+  background-color: var(--current-line) !important;
+}
+
+.bp3-elevation-3 .dont-unfocus-block[style~="background-color:"] {
+  background-color: var(--comment) !important;
+}
+
+
+/* Date picker */
+
+.bp3-datepicker{
+  background-color: var(--current-line);
+  color: var(--foreground2);
+}
+
+.bp3-html-select.bp3-minimal.bp3-datepicker-month-select > select,
+.bp3-html-select.bp3-minimal.bp3-datepicker-year-select > select {
+  color: var(--foreground2);
+}
+
+
+/* Kanban board */
+
+.kanban-board {
+  background-color: #6c6f75;
+}
+
+.kanban-title {
+  border-bottom: 1px solid var(--foreground);
+}
+
+.kanban-column {
+  background-color: var(--background2);
+}
+
+.kanban-card {
+  background-color: var(--background);
+}
+
+
+/* Filter page */
+
+.bp3-tooltip .bp3-popover-content {
+  background-color: var(--current-line);
+  color: var(--foreground);
+}
+
+.bp3-popover .bp3-popover-content {
+  background-color: var(--current-line);
+  color: var(--foreground);
+}
+
+.bp3-popover-arrow {
+  color: var(--current-line);
+}
+
+.bp3-popover .bp3-popover-content .bp3-button {
+  background-color: var(--background2) !important;
+  color: var(--foreground) !important;
+  background-image: none;
+  box-shadow: none;
+}
+
+
+/* Embed containers */
+
+.rm-embed-container{
+  background-color: var(--background2);
+}
+
+.rm-embed-container .rm-embed-container {
+  background-color: var(--current-line);
+}
+
+
+/* Checkmarks */
+
+.checkmark {
+  background-color: var(--current-line);
+  border-color: var(--background2);
+}
+
+.check-container input:active ~ .bp3-control-indicator {
+  background-color: var(--bullet-outer);
+}
+
+.check-container input:not(:disabled):active:checked ~ .bp3-control-indicator {
+  background-color: var(--bullet-outer);
+}
+
+.check-container input:checked ~ .checkmark {
+  background-color: var(--dark-yellow);
+}
+
+
+/* Sliders */
+
+.bp3-slider-progress.bp3-intent-primary {
+  background-color: var(--yellow);
+}
+
+.bp3-slider-handle {
+  background-color: var(--bullet-outer);
+  background-image: none;
+}
+
+.bp3-slider-handle .bp3-slider-label {
+  background-color: var(--bullet-inner);
+  color: var(--background2);
+}
+
+
+/* Inline code blocks with ` */
+
+code {
+  color: var(--orange);
+  background-color: var(--current-line);
+  border-color: var(--current-line);
+}
+
+
+/* Multiline code blocks with ``` */
+
+.bp3-popover-text {
+  color: var(--foreground);
+}
+
+.CodeMirror {
+  background-color: var(--background);
+  color: var(--foreground);
+  border: 2px solid var(--background2);
+}
+
+.CodeMirror-scrollbar-filler,
+.CodeMirror-gutter-filler {
+  background-color: var(--background);
+}
+
+.CodeMirror-gutters {
+  border-right: 1px solid var(--background);
+  background-color: var(--background);
+}
+
+.CodeMirror-linenumber {
+  color: var(--comment);
+}
+
+.CodeMirror-guttermarker {
+  color: var(--background);
+}
+
+.CodeMirror-guttermarker-subtle {
+  color: var(--comment);
+}
+
+.CodeMirror-cursor {
+  border-left: 1px solid var(--foreground);
+}
+
+.CodeMirror div.CodeMirror-secondarycursor {
+  border-left: 1px solid var(--current-line);
+}
+
+.cm-fat-cursor .CodeMirror-cursor {
+  background: var(--bullet-inner);
+  color: var(--bullet-outer);
+}
+
+.CodeMirror-ruler {
+  border-left: 1px solid var(--current-line);
+}
+
+.cm-s-default .cm-header {
+  color: var(--blue);
+}
+
+.cm-s-default .cm-quote {
+  color: var(--green);
+}
+
+.cm-negative {
+  color: var(--red);
+}
+
+.cm-positive {
+  color: var(--green);
+}
+
+.cm-s-default .cm-keyword {
+  color: var(--pink);
+}
+
+.cm-s-default .cm-atom {
+  color: var(--purple);
+}
+
+.cm-s-default .cm-number {
+ color: var(--purple);
+}
+
+.cm-s-default .cm-def {
+ color: var(--blue);
+}
+
+.cm-s-default .cm-variable-2 {
+ color: var(--orange);
+}
+
+.cm-s-default .cm-variable-3,
+.cm-s-default .cm-type {
+ color: var(--green);
+}
+
+.cm-s-default .cm-comment {
+  color: var(--comment);
+}
+
+.cm-s-default .cm-string {
+  color: var(--yellow);
+}
+
+.cm-s-default .cm-string-2 {
+  color: var(--yellow);
+}
+
+.cm-s-default .cm-meta {
+  color: var(--bullet-outer);
+}
+
+.cm-s-default .cm-qualifier {
+  color: var(--green);
+}
+
+.cm-s-default .cm-builtin {
+  color: var(--green);
+}
+
+.cm-s-default .cm-bracket {
+  color: var(--bullet-inner);
+}
+
+.cm-s-default .cm-tag {
+  color: var(--pink);
+}
+
+.cm-s-default .cm-attribute {
+  color: var(--green);
+}
+
+.cm-s-default .cm-hr {
+  color: var(--bullet-inner);
+}
+
+.cm-s-default .cm-link {
+  color: var(--blue);
+}
+
+.cm-s-default .cm-error {
+  color: var(--foreground);
+}
+
+.cm-invalidchar {
+  color: var(--red);
+}
+
+div.CodeMirror span.CodeMirror-matchingbracket {
+  color: var(--foreground);
+}
+
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
+  color: var(--red);
+}
+
+.CodeMirror-matchingtag {
+ background: var(--orange);
+}
+
+.CodeMirror-activeline-background {
+ background: var(--current-line);
+}
+
+.CodeMirror-selected {
+  background: var(--current-line);
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+  background: var(--current-line);
+}
+
+.CodeMirror-line::selection,
+.CodeMirror-line>span::selection,
+.CodeMirror-line>span>span::selection {
+  background: var(--current-line);
+}
+
+.CodeMirror-line::-moz-selection,
+.CodeMirror-line>span::-moz-selection,
+.CodeMirror-line>span>span::-moz-selection {
+  background: var(--current-line);
+}
+
+.cm-searching {
+  background-color: var(--dark-yellow);
+}
+ 
+
+/* Intercom app */
+
+.intercom-app,
+.intercom-launcher-frame,
+#intercom-container {
+  display: none !important;
+}
+
