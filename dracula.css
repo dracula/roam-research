@@ -4,12 +4,6 @@ Install with the Stylus extension for Chrome or Firefox.
 */
 
 :root {
-  /* Dracula black & white colors */
-  --background:   #282a36;
-  --current-line: #44475a;
-  --foreground:   #f8f8f2;
-  --comment:      #6272a4;
-
   /* Dracula color palette */
   --blue:   #8be9fd;
   --green:  #50fa7b; 
@@ -19,8 +13,15 @@ Install with the Stylus extension for Chrome or Firefox.
   --red:    #ff5555;
   --yellow: #f1fa8c;
 
+  /* Dracula black & white colors */
+  --background:   #282a36;
+  --current-line: #44475a;
+  --foreground:   #f8f8f2;
+  --comment:      #6272a4;
+
   /* Other UI colors */
-  --dark-yellow:  #6c7605;
+  --dark-blue:    #29454B;
+  --dark-yellow:  #606438;
   --background2:  #333545;
   --foreground2:  #BDCAD4;
   --search-input: #e4e9ed;
@@ -54,11 +55,19 @@ Install with the Stylus extension for Chrome or Firefox.
   background-color: var(--background2);
 }
 
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper,
+.roam-body .roam-app .roam-sidebar-container > * {
+  color: var(--foreground2);
+  opacity: 0.9;
+}
+
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover,
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover {
   background: var(--current-line);
   color: var(--foreground);
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button .bp3-button:hover {
@@ -69,6 +78,37 @@ Install with the Stylus extension for Chrome or Firefox.
   background-color: var(--current-line);
   color: var(--foreground);
   border-color: var(--background2);
+}
+
+
+/* Button */
+
+.roam-block .bp3-button {
+  background-color: var(--background2);
+  color: var(--foreground2);
+  background-image: none;
+}
+
+.roam-block .bp3-button:hover {
+  background-color: var(--current-line);
+  color: var(--foreground);
+}
+
+.dont-focus-block.bp3-button {
+  background-color: var(--background2);
+  color: var(--foreground2);
+  background-image: none;
+}
+
+.dont-focus-block.bp3-button:hover {
+  background-color: var(--current-line);
+  color: var(--foreground);
+}
+
+/* Heading */
+
+.rm-level3 {
+  color: var(--foreground2);
 }
 
 
@@ -97,6 +137,13 @@ Install with the Stylus extension for Chrome or Firefox.
   background-color: var(--dark-yellow);
 }
 
+.block-highlight-blue {
+  background-color: var(--dark-blue);
+}
+
+.block-highlight-grey {
+  background-color: var(--dark-blue);
+}
 
 /* Toast messages */
 
