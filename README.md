@@ -24,7 +24,7 @@ Navigate to the bottom and click the `+` next to `Applies to Everything`. Select
 
 ### 5. Add `dracula.css` 
 
-Copy and paste the contents of `dracula.css` ([raw text version for easy copy-and-paste](https://raw.githubusercontent.com/nsgrantham/roam-research-dracula-theme/master/dracula.css)) into the Stylus box below `Code 1`.
+Copy and paste the contents of `dracula.css` in this repo into the Stylus box (below `Code 1`).
 
 ### 6. Save and view your Roam Research pages.
 
