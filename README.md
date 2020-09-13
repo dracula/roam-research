@@ -1,31 +1,21 @@
-# Roam Research Dracula Theme
+# Dracula for [Roam Research](https://roamresearch.com/)
 
-![Screenshot of Roam Research with Dracula Theme](dracula-screenshot.png)
+> A dark theme for [Roam Research](https://roamresearch.com/).
 
-## Installation
+![Screenshot](dracula-screenshot.png)
 
-### 1. Install the Stylus browser extension
+## Install
 
-  - [Stylus for Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)
-  - [Stylus for Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
-  - Stylus is not available for Safari
+All instructions can be found at [draculatheme.com/roam-research](https://draculatheme.com/roam-research).
 
-### 2. Make a new style in Stylus
+## Team
 
-Open Stylus, select `Manage`, then select `Write New Style`
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/template/graphs/contributors).
 
-### 3. Name your new style
+[![Neal Grantham](https://avatars0.githubusercontent.com/u/4433521?v=3&s=70)](https://github.com/nsgrantham) | 
+--- |
+[Neal Grantham](https://github.com/nsgrantham) | 
 
-`Roam Research Dracula` (or whatever else you'd like)
+## License
 
-### 4. Configure the style for Roam Research URLs only
-
-Navigate to the bottom and click the `+` next to `Applies to Everything`. Select `URLs starting with` from the dropdown menu and add `https://roamresearch.com/#/app/` in the following box.
-
-### 5. Add `dracula.css` 
-
-Copy and paste the contents of `dracula.css` in this repo into the Stylus box (below `Code 1`).
-
-### 6. Save and view your Roam Research pages.
-
-🧛‍♂️🦇⚰️
+[MIT License](./LICENSE)
