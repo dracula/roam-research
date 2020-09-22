@@ -18,8 +18,8 @@
     - Select `URLs starting with` from the dropdown menu
     - Add `https://roamresearch.com/#/app/`
 
-5. Add the Dracula CSS 
-    - Copy and paste the contents of [`dracula.css`](./dracula.css) into the Stylus code box
+5. Add the Dracula CSS
+    - Copy and paste the contents of `dracula.css` into the Stylus code box
 
 6. Save the style and refresh your Roam Research page
-    - 🧛🏻‍♂️ Enjoy the darkness
+    - Enjoy the darkness
