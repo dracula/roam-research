@@ -120,6 +120,7 @@ Install with the Stylus extension for Chrome or Firefox.
 
 #right-sidebar > div {
   background-color: var(--background2);
+  color: var(--foreground)
 }
 
 
