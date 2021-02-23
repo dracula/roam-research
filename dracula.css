@@ -1,5 +1,5 @@
 /*
-Dracula Theme for Roam Research v0.7.2.
+Dracula Theme for Roam Research v0.8.2.
 Install with the Stylus extension for Chrome or Firefox.
 */
 
@@ -163,12 +163,12 @@ Install with the Stylus extension for Chrome or Firefox.
 
 /* Sync icon */
 
-.rm-saving-inner-icon.rm-synced {
+.rm-sync__icon.rm-sync--synced {
   background-color: var(--green);
   opacity: 1;
 }
 
-.rm-saving-inner-icon.rm-saving-remote {
+.rm-sync__icon.rm-sync--saving-remote {
   background-color: var(--orange);
   opacity: 1;
 }
@@ -199,11 +199,11 @@ a:hover {
   color: var(--comment);
 }
 
-.rm-page-ref-link-color {
+.rm-page-ref--link {
   color: var(--purple);
 }
 
-.rm-page-ref-brackets {
+.rm-page-ref__brackets {
   color: var(--comment);
 }
 
@@ -229,16 +229,21 @@ a:hover {
 
 /* Bullet points & indent lines */
 
-.controls .simple-bullet-outer .simple-bullet-inner {
+.rm-bullet__inner {
   background-color: var(--bullet-inner);
 }
 
-.roam-bullet-closed {
-  background-color: var(--bullet-outer); 
+.rm-bullet.rm-bullet--closed .rm-bullet__inner {
+  border: 4px solid var(--bullet-outer);
+  margin-top: 2px;
 }
 
-#right-sidebar .roam-bullet-closed {
-  background-color: var(--bullet-outer); 
+.sidebar-content .rm-bullet.rm-bullet--closed .rm-bullet__inner {
+  border: 4px solid var(--bullet-outer);
+}
+
+.rm-multibar {
+  border-right: 1px solid var(--comment);
 }
 
 .block-border-left {
