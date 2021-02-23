@@ -83,6 +83,10 @@ Install with the Stylus extension for Chrome or Firefox.
 
 /* Button */
 
+.bp3-button.bp3-minimal {
+  color: var(--foreground);
+}
+
 .bp3-button.bp3-minimal.bp3-small {
   color: var(--comment); 
 }
@@ -186,6 +190,10 @@ a:hover {
 
 
 /* Reference links */
+
+.rm-bq { /* block quote */
+  background-color: var(--background2);
+}
 
 .rm-block-ref {
   border-bottom: 0.5px solid var(--current-line);
