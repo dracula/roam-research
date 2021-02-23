@@ -91,10 +91,6 @@ Install with the Stylus extension for Chrome or Firefox.
   color: var(--comment); 
 }
 
-.bp3-button.bp3-minimal {
-    color: var(--foreground);
-}
-
 .roam-block .bp3-button {
   background-color: var(--background2);
   color: var(--foreground2);
