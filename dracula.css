@@ -187,6 +187,10 @@ a:hover {
 
 /* Reference links */
 
+.rm-bq { /* block quote */
+  background-color: var(--background2);
+}
+
 .rm-block-ref {
   border-bottom: 0.5px solid var(--current-line);
 }
