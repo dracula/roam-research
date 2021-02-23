@@ -83,8 +83,16 @@ Install with the Stylus extension for Chrome or Firefox.
 
 /* Button */
 
+.bp3-button.bp3-minimal {
+  color: var(--foreground);
+}
+
 .bp3-button.bp3-minimal.bp3-small {
   color: var(--comment); 
+}
+
+.bp3-button.bp3-minimal {
+    color: var(--foreground);
 }
 
 .roam-block .bp3-button {
