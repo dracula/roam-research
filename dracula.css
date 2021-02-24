@@ -203,6 +203,10 @@ a:hover {
   background-color: var(--background2);
 }
 
+.rm-inline-references {
+  background-color: var(--current-line);
+}
+
 .rm-page-ref {  
   color: var(--comment);
 }
