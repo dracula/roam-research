@@ -215,6 +215,10 @@ a:hover {
   color: var(--purple);
 }
 
+.rm-page-ref--namespace {  
+  color: var(--purple);
+}
+
 .rm-page-ref__brackets {
   color: var(--comment);
 }
