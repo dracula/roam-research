@@ -138,7 +138,7 @@ Install with the Stylus extension for Chrome or Firefox.
 
 /* Highlights */
 
-.roam-highlight {
+.rm-highlight {
   background-color: var(--dark-yellow);
 }
 
@@ -203,11 +203,19 @@ a:hover {
   background-color: var(--background2);
 }
 
+.rm-inline-references {
+  background-color: var(--current-line);
+}
+
 .rm-page-ref {  
   color: var(--comment);
 }
 
 .rm-page-ref--link {
+  color: var(--purple);
+}
+
+.rm-page-ref--namespace {  
   color: var(--purple);
 }
 
