@@ -457,6 +457,14 @@ a:hover {
   box-shadow: none;
 }
 
+.rm-autocomplete-result {
+  color: #FFF;
+}
+
+.bp3-text-overflow-ellipsis {
+  color: var(--background);
+}
+
 
 /* Embed containers */
 
@@ -517,194 +525,134 @@ code {
 
 /* Multiline code blocks with ``` */
 
-.bp3-popover-text {
-  color: var(--foreground);
-}
-
-.CodeMirror {
+.rm-code-block {
   background-color: var(--background);
   color: var(--foreground);
   border: 2px solid var(--background2);
 }
 
-.CodeMirror-scrollbar-filler,
-.CodeMirror-gutter-filler {
+.cm-gutter {
   background-color: var(--background);
+  color: var(--comment);
+  right-border: 2px solid var(--background2);
 }
 
-.CodeMirror-gutters {
-  border-right: 1px solid var(--background);
-  background-color: var(--background);
+.cm-activeLine, .cm-focused .cm-activeLine, .cm-activeLineGutter, .cm-focused .cm-activeLineGutter, .ͼ2 .cm-activeLine, .ͼ3 .cm-activeLine, .ͼ2 .cm-activeLineGutter, .ͼ3 .cm-activeLineGutter {
+  background-color: var(--background) !important;
 }
 
-.CodeMirror-linenumber {
+.ͼ2 .cm-content, .ͼ3 .cm-content {
+  caret-color: var(--blue);
+}
+
+.ͼ2 .cm-selectionBackground, .ͼ3 .cm-selectionBackground, .ͼ2.cm-focused .cm-selectionBackground, .ͼ3.cm-focused .cm-selectionBackground, .cm-content::selection {
+  background-color: var(--background2);
+  color: var(--foreground2);
+}
+
+.ͼ1 .cm-cursor, .ͼ3 .cm-cursor {
+  border-left-color: var(--white);
+}
+
+.ͼ2 .cm-specialChar, .ͼ3 .cm-specialChar {
+  color: var(--green);
+}
+
+.ͼ1 .cm-placeholder {
   color: var(--comment);
 }
 
-.CodeMirror-guttermarker {
-  color: var(--background);
+.ͼ1 .cm-textfield {
+  vertical-align: middle;
+  color: inherit;
+  font-size: 70%;
+  border: 1px solid silver;
+  padding: .2em .5em;
 }
 
-.CodeMirror-guttermarker-subtle {
-  color: var(--comment);
+.ͼ1 .cm-foldPlaceholder {
+  background-color: transparent;
+  border-color: var(--foreground2);
+  color: var(--foreground2);
 }
 
-.CodeMirror-cursor {
-  border-left: 1px solid var(--foreground);
+.ͼ1 .cm-gutters, .ͼ2 .cm-gutters, .ͼ3 .cm-gutters {
+  background-color: var(--background2);
+  color: var(--foreground2);
+  border-right: 1px solid var(--background2);
 }
 
-.CodeMirror div.CodeMirror-secondarycursor {
-  border-left: 1px solid var(--current-line);
+.ͼ1 .cm-matchingBracket {
+  background-color: var(--background2);
+  outline: 1px solid var(--background2);
 }
 
-.cm-fat-cursor .CodeMirror-cursor {
-  background: var(--bullet-inner);  /* best guess */
-  color: var(--bullet-outer);       /* best guess */
+.ͼ1 .cm-nonmatchingBracket {
+  background-color: var(--red);
 }
 
-.CodeMirror-ruler {
-  border-left: 1px solid var(--current-line);
-}
-
-.cm-s-default .cm-header {
-  color: var(--blue);
-}
-
-.cm-s-default .cm-quote {
-  color: var(--green);  /* best guess */
-}
-
-.cm-negative {
-  color: var(--red);  /* best guess */
-}
-
-.cm-positive {
-  color: var(--green);  /* best guess */
-}
-
-.cm-s-default .cm-keyword {
+.ͼa {
+  /* keyword */
   color: var(--pink);
 }
 
-.cm-s-default .cm-atom {
+.ͼb {
+  /* operator */
+  color: var(--blue);
+}
+
+.ͼc {
+  /* color */
   color: var(--purple);
 }
 
-.cm-s-default .cm-number {
- color: var(--purple);
-}
-
-.cm-s-default .cm-def {
- color: var(--blue);
-}
-
-.cm-s-default .cm-variable-2 {
- color: var(--orange);
-}
-
-.cm-s-default .cm-variable-3,
-.cm-s-default .cm-type {
- color: var(--green);
-}
-
-.cm-s-default .cm-comment {
-  color: var(--comment);
-}
-
-.cm-s-default .cm-string {
+.ͼd {
+  /* string */
   color: var(--yellow);
 }
 
-.cm-s-default .cm-string-2 {
-  color: var(--yellow);  /* best guess */
-}
-
-.cm-s-default .cm-meta {
-  color: var(--bullet-outer);  /* best guess */
-}
-
-.cm-s-default .cm-qualifier {
-  color: var(--green);
-}
-
-.cm-s-default .cm-builtin {
-  color: var(--green);
-}
-
-.cm-s-default .cm-bracket {
-  color: var(--bullet-inner);  /* best guess */
-}
-
-.cm-s-default .cm-tag {
-  color: var(--pink);
-}
-
-.cm-s-default .cm-attribute {
-  color: var(--green);
-}
-
-.cm-s-default .cm-hr {
-  color: var(--bullet-inner);  /* best guess */
-}
-
-.cm-s-default .cm-link {
+.ͼe {
+  /* regexp */
   color: var(--blue);
 }
 
-.cm-s-default .cm-error {
-  color: var(--foreground);
+.ͼf {
+  /* variable */
+  color: var(--blue);
 }
 
-.cm-invalidchar {
+.ͼg {
+  color: var(--green);
+}
+
+.ͼh {
+  /* propertyname */
+  color: var(--pink);
+}
+
+.ͼi {
+  /* typename, classname, etc. */
+  color: var(--green);
+}
+
+.ͼj {
+  color: var(--orange);
+}
+
+.ͼk {
+  /* name */
   color: var(--red);
 }
 
-div.CodeMirror span.CodeMirror-matchingbracket {
-  color: var(--foreground);
+.ͼl {
+  /* comment */
+  color: var(--comment);
 }
 
-div.CodeMirror span.CodeMirror-nonmatchingbracket {
-  color: var(--red);
+.ͼm {
+  color: var(--green);
 }
 
-.CodeMirror-matchingtag {
- background: var(--orange);  /* best guess */
+.ͼn {
+     color: var(--orange);
 }
-
-.CodeMirror-activeline-background {
- background: var(--current-line);
-}
-
-.CodeMirror-selected {
-  background: var(--current-line);
-}
-
-.CodeMirror-focused .CodeMirror-selected {
-  background: var(--current-line);
-}
-
-.CodeMirror-line::selection,
-.CodeMirror-line>span::selection,
-.CodeMirror-line>span>span::selection {
-  background: var(--current-line);
-}
-
-.CodeMirror-line::-moz-selection,
-.CodeMirror-line>span::-moz-selection,
-.CodeMirror-line>span>span::-moz-selection {
-  background: var(--current-line);
-}
-
-.cm-searching {
-  background-color: var(--dark-yellow);  /* best guess */
-}
- 
-
-/* Intercom app */
-
-.intercom-app,
-.intercom-launcher-frame,
-#intercom-container {
-  display: none !important;
-}
-
