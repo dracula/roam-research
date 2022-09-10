@@ -523,7 +523,7 @@ code {
 }
 
 
-/* Multiline code blocks with ``` */
+/* Multiline code blocks with triple backtick */
 
 .rm-code-block {
   background-color: var(--background);
